@@ -1,0 +1,56 @@
+{
+    "name": "uldisn/weberp",
+    "description": "EU ERP",
+    "keywords": ["erp","yii","phundament"],
+    "type": "yii-app",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Uldis Nelsons",
+            "email": "uldisnelsons@gmail.com",
+            "homepage":"http://www.weberp.lv"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://packages.phundament.com"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/DbrLib"
+        },
+        {
+                "type": "package",
+                "package": {
+                    "name": "bopoda/ace",
+                    "version": "1.0",
+                    "dist": {
+                        "url": "https://github.com/bopoda/ace/archive/master.zip",
+                        "type": "zip"
+                    },
+                    "source": {
+                        "url": "git@github.com:bopoda/ace.git",
+                        "type": "git",
+                        "reference": "origin/master"
+                    }
+            }
+        }
+    ],
+    "minimum-stability":"dev",	
+     "require": {
+        "uldisn/d2app":  "dev-master",
+        "bopoda/ace": "1.0"
+     },
+    "autoload":{
+        "psr-0":{
+            "D2App":"./src"
+        }
+    },
+    "scripts":{
+        "pre-install-cmd":"D2App\\ComposerCallback::preInstall",
+        "post-install-cmd":"D2App\\ComposerCallback::postInstall",
+        "pre-update-cmd":"D2App\\ComposerCallback::preUpdate",
+        "post-update-cmd":"D2App\\ComposerCallback::postUpdate"
+    }     
+}
