@@ -4,7 +4,7 @@ Requirements
 * git (for Windows: http://git-scm.com/downloads, for Centos yum install git, for Ubuntu: sudo apt-get install git)
 * hg (for Windows: http://mercurial.selenic.com/downloads, for Centos yum install mercurial, for Ubuntu: sudo apt-get install mercurial)
 * MySql/MariaDB with option "lower_case_table_names=1"
-* ACE Admin version ace-v1.2--bs-v2.3.x or use free https://github.com/bopoda/ace
+* ACE Admin version ace-v1.2--bs-v2.3.x or use free https://github.com/bopoda/ace, what are not addapted
 
 Installation instruction
 ==========
